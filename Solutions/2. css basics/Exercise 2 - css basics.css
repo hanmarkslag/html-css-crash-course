@@ -1,6 +1,7 @@
 /*
     - references: http://www.w3schools.com/css/ &
-      http://www.w3schools.com/colors/colors_picker.asp
+      http://www.w3schools.com/colors/colors_picker.asp &
+      http://www.w3schools.com/css/css_table.asp
 
     - implement classes (use css file, define class, use class)
     - use colors (background-color, color (text) -> color name & hex code)
@@ -11,3 +12,14 @@
     - styling a link (a:link and a:hover)
     - styling a table (color, background color, border, text-align)
 */
+
+
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    text-align: left;
+}
