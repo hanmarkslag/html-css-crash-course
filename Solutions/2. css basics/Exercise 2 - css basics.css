@@ -1,18 +1,44 @@
-/*
-    - references: http://www.w3schools.com/css/ &
-      http://www.w3schools.com/colors/colors_picker.asp &
-      http://www.w3schools.com/css/css_table.asp
+.page {
+    background-color: #f2ffe5;
+}
 
-    - implement classes (use css file, define class, use class)
-    - use colors (background-color, color (text) -> color name & hex code)
-    - use fonts (font-family, font-style, font-size, font-weight
+.page-header {
+    color: darkolivegreen;
+}
 
-    - start with styling the headers (<h1>, <h2>, etc.) and paragraphs (<p>)
-    - styling borders of headers and paragraphs
-    - styling a link (a:link and a:hover)
-    - styling a table (color, background color, border, text-align)
-*/
+.article-header {
+    color: #ff6200
+}
 
+h3 {
+    color: cadetblue;
+}
+
+.text {
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+.link {
+    font-family: "Rockwell";
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: darkred;
+}
+
+.text-area {
+    border: 1px solid lightcoral;
+    background-color: lightgray;
+}
+
+a:hover {
+    background-color: #ff6200;
+}
+
+.list {
+    list-style-type: upper-roman;
+}
 
 table, th, td {
     border: 1px solid black;
@@ -22,4 +48,27 @@ table {
 }
 th {
     text-align: left;
+    background-color: lightcoral;
 }
+tr:nth-child(odd) {background: lightgray}
+
+/*
+    - references: http://www.w3schools.com/css/ &
+      http://www.w3schools.com/colors/colors_picker.asp &
+      http://www.w3schools.com/css/css_table.asp
+
+    - attach css file to html file
+    - implement classes (use css file, define class, use class)
+    - use custom class id or element name
+    - use colors (background-color, color (text) -> color name & hex code)
+    - use fonts (font-family, font-style, font-size, font-weight
+
+    - start with styling the headers (<h1>, <h2>, etc.) and paragraphs (<p>)
+    - use two classes in one element
+    - styling borders of headers and paragraphs
+    - styling a link (a:link and a:hover)
+    - Styling lists
+    - styling a table (color, background color, border, text-align)
+*/
+
+
