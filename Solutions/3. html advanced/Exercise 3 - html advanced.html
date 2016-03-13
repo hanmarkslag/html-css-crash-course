@@ -1,9 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Title</title>
+    <title>Gezinslidmaatschap</title>
 </head>
 <body>
+    <img src="geit.jpg" width="100%">
+    <h1>Aanvragen Gezinslidmaatschap</h1>
+
+    <p>Vul de onderstaande gegevens in om een lidmaatschap voor u en uw gezin aan te vragen. Het
+        gezinslidmaatschap kan aangevraagd worden voor u en uw partner en maximaal 2 kinderen. Een
+        lidmaatschap loopt van 1 januari t/m 31 december. Onderstaand vindt u de tarieven:
+    </p>
+    <ul>
+        <li>Gezin (max. 2 kinderen): 145 euro per jaar</li>
+        <li>Extra kind: 25 euro</li>
+        <li>Hond: 10 euro</li>
+    </ul>
+
+    <form onsubmit="confirm('Uw Aanvraag vesrturen?')">
+        <h3>Uw Gegevens</h3>
+        <label>Aanhef</label>
+        <select>
+            <option value="dhr">Dhr.</option>
+            <option value="mevr">Mevr.</option>
+        </select><br>
+
+        <label>Uw voornaam</label>
+        <input type="text"><br>
+        <label>Uw achternaam</label>
+        <input type="text"><br>
+        <label>Voornaam partner</label>
+        <input type="text"><br>
+        <label>Achternaam partner</label>
+        <input type="text"><br>
+        <label>Naam 1e kind</label>
+        <input type="text"><br>
+        <label>Naam 2e kind</label>
+        <input type="text"><br>
+
+        <label>Adres</label>
+        <input type="text"><br>
+        <label>Postcode</label>
+        <input type="text"><br>
+        <label>Woonplaats</label>
+        <input type="text"><br>
+
+        <h3>Aanvullende Gegevens</h3>
+
+        <input type="checkbox">Parkeerplaats (25 euro per jaar)<br>
+        <input type="checkbox">Bolderkar (50 euro per jaar)<br><br>
+
+        <label>Type gezin</label><br>
+        <input type="radio" name="gezin">Rustig<br>
+        <input type="radio" name="gezin">Druk<br>
+        <input type="radio" name="gezin">ADHD<br><br>
+
+        <label>Opmerkingen</label><br>
+        <textarea></textarea><br><br>
+
+        <input type="submit" value="Verzend aanvraag">
+    </form>
+
+    <br>
+    <br>
 
 </body>
 </html>
