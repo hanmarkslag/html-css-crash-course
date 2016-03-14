@@ -1,0 +1,131 @@
+Opdracht 1 - html basics
+
+In deze opdracht ga je aan de slag met de basis elementen van html.
+Je bouwt een webpagina voor kinderboerderij Het Gillende Geitje.
+Gebruik deze website voor meer info over html elementen: http://www.w3schools.com/html/
+
+1. Maak op je bureaublad een nieuwe map aan met naam html-basics
+
+2. Open notepad en kopieer onderstaande html code (deze staat ook in het example.html bestand):
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+3. Sla het bestand op als index.html
+
+LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel klik erop (je kan notepad open laten staan)
+
+4. - Vervang de tekst in het <title> element door "Het Gillende Geitje" en type in het <body> element "Hallo Dieren"
+   - Hoera ! Jouw eerste website is live! De title zie je terug in het tabje in de browser.
+
+5. - Verwijder in het <body> element "Hallo Dieren"; alle html code die nu volgt komt in het <body> element te staan.
+   - We gaan een top-foto toevoegen door het <img> element te gebruiken.
+   - Kopieer het bestand geit.jpg naar jouw map waar je net de index.html in hebt aangemaakt.
+   - Zet de volgende html code in het <body> element: <img src="geit.jpg" width="100%">.
+   - Zoals je ziet is dit het <img> element met daarin twee attributen, een voor de naam van het plaatje
+     en een voor de breedte. 100% betekent dat de gehele breedte van de browser gebruikt wordt.
+
+6. - Voeg een header in de pagina toe door het <h1> element te gebruiken
+   - Zet de volgende html code na het <img> element: <h1>Welkom bij kinderboerderij Het Gillende Geitje</h1>
+   - HTML kent verschillende headers, van <h1> tot <h6> in afnemende grootte
+
+7. - Voeg nu een sub-header toe met een stukje tekst
+   - Zet de volgende html code na het <h1> element: <h2>Over onze kinderboerderij</h2>
+   - Zet er vervolgens een <p> element neer (vergeet hem niet af te sluiten met een </p> met de onderstaande tekst
+     "Kinderboerderij Het Gillende Geitje is een traditionele kinderboerderij
+      met veel verschillende boerderij- en huisdieren. U zult zich wellicht
+      afvragen waar de naam van onze kinderboerderij vandaan komt. Komt u
+      vooral langs dan is deze vraag al snel beantwoord. Naast geiten zijn
+      er op onze kinderboerderij ook schapen, een kalf, kippen, konijnen,
+      2 lama's en een zebra."
+   - Het <p> element is het paragraaf element dat meestal gebruikt wordt om stukken tekst te tonen.
+
+8. - Je gaat nu een link maken naar een andere webpagina; dit is de basis van HTML (de HT in HTML; Hypertext)
+   - Je maakt een link door gebruik te maken van het <a> element
+   - Voeg de volgende html code toe onder het <p> element:
+     <a href="http://www.kinderboerderijgeldrop.nl/uploads/images/plaatjes/geiten_collage_langwerpig.jpg">Klik hier voor onze dieren.</a>
+   - Laat je niet in de war brengen door de lengte, de meeste ruimte wordt ingenomen door url naar de webpagina,
+     hiervoor wordt het href attribuut gebruikt.
+   - Yes! Jouw eerste hyperlink is een feit! Klik erop om hem te testen.
+
+9. - Maak opnieuw een paragraaf aan (<p> element) met de volgende tekst:
+     "Uniek voor onze kinderboerderij is de <b>welkomst-geit</b> die de gasten welkom heet."
+   - Wat valt je op aan de tekst... inderdaad er wordt gebruik gemaakt van het <b> element;
+     alle tekst binnen het <b> element wordt bold en zoals je ziet kan het <b> element binnen een
+     ander element gebruikt worden. In sit geval binnen het <p> element
+
+10. - Plaatjes maken een website leuker en geanimeerde plaatsjes nog leuker
+    - Kopieer het bestand welkom-geit.gif naar jouw map waar je net de index.html in hebt aangemaakt.
+    - Maak een plaatje op de website door gebruik te maken van het <img> element,
+      zonder het width attribuut te gebruiken
+    - De welkomst-geit is actief!
+
+11. - Maak een nieuwe header aan met het <h2> element en als tekst: "Het ontstaan van onze kinderboerderij"
+    - Maak een nieuwe paragraaf aan met het <p> element en als tekst:
+      "Onze kinderboerderij is ontstaan uit een fusie van twee buurt-boerderijen,
+       		<i>De Gave Gans</i> en <i>De Zieke Koe</i>. Nadat de De Gave Gans failliet is gegaan,
+       		heeft De Zieke Koe deze (en al zijn dieren) overgenomen. Door de vervuilde
+       		grond onder De Zieke Koe is besloten om een nieuwe locatie te betrekken en
+       		de naam aan te passen naar Het Gillende Geitje. Klik
+       		<a href="https://www.youtube.com/watch?v=TpeUa8PdH2U">hier</a> voor meer
+       		informatie over de Gillende Geit."
+    - Je ziet dat er in de tekst twee elementen worden gebruikt: het <i> element zorgt ervoor dat de tekst
+      italic getoond wordt en het <a> element ken je al; dit is een link
+    - Dus... <i> en <a> elementen kunnen ook binnen (sommige) andere elementen gebruikt worden; door het <a>
+      element bijvoorbeeld in een <p> element te gebruiken kan je de tekst binnen het <a> element
+      klikbaar maken en zo naar een andere webpagina navigeren
+    - Test de link!
+
+12. - Maak een nieuwe header met het <h3> element en tekst "Openingstijden"
+    - Maak een lijstje met bullets door gebruik te maken van het <ul> element. Het <ul> element plaats
+      je <li> elementen die de tekst van het lijstje bevatten; voor elke bullet 1 <li> element. Dus:
+      <ul>
+         <li>Mijn eerste regel</li>
+         ....
+      </ul>
+    - Maak een lijstje met vier openingstijden;
+        "Zondag en Maandag: gesloten"
+        "Dinsdag t/m Vrijdag: 10:00 - 17:00 uur"
+        "Zaterdag: 9:00 - 18:00 uur"
+        "Feestdagen: gesloten m.u.v. tweede paasdag"
+
+13. - HTML heeft ook genummerde lijstjes, gebruik hiervoor het <ol> element i.p.v. het <ul> element
+    - Maak eerst een nieuwe header met het <h3> element en tekst "Huisregels"
+    - En vervolgens het lijstje met het <ol> element en daarbinnen de <li> elementen met hierin de volgende tekst:
+        "Geen dieren mee naar huis nemen"
+        "Geen eigen huisdieren en/of kinderen achterlaten"
+        "De dieren en het personeel niet voederen"
+        "Niet met de rug naar de ezel staan"
+
+14. - Bijna klaar!!
+    - Het laatste wat we gaan toevoegen is een tabel
+    - Een tabel heeft elementen in elementen in elementen .....
+    - De hoofdstructuur van een HTML tabel bestaat uit het <table> element en het <tr> element (table row):
+        <table>
+            <tr></tr>
+            <tr></tr>
+            ....
+        </table>
+    - Binnen het <tr> element gebruik je <th> (table header) of <td> (table data) elementen
+    - Bijvoorbeeld tabel met twee kolommen:
+        <table>
+            <tr><th>Naam</th><th>Cool</th></tr>
+            <tr><td>Piet</td><td>Nee</td></tr>
+            <tr><td>Klaas</td><td>Ja</td></tr>
+            <tr><td>Lies</td><td>100%</td></tr>
+            ....
+        </table>
+    - Let op dat alleen het eerste <tr> element de table headers bevat <th>
+    - Maak nu een tabel met drie kolommen en vijf rijen met kolom headers "Dier", "Aantal", "Aibaar"
+      Leef je uit met de invulling van de table data
+
+15. DONE !! De website van de kinderboerderij is klaar. Maar.... de kinderen vinden hem nogal saai,
+    geen kleurtjes, lijntjes, etc. Tijd voor wat styling, op naar exercise twee om naast HTML
+    expert nu ook een CSS crack te worden!

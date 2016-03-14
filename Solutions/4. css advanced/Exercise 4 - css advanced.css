@@ -1,3 +1,89 @@
+body {
+    background-color: #f0f0f5
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    margin-top: -120px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+
+}
+
+.text {
+    font-family: Calibri;
+    font-size: 20px;
+    padding-left: 10px;
+    width: 60%;
+}
+
+label {
+    display: inline-block;
+    width: 160px;
+    margin-left: 10px;
+}
+
+ul {
+    font-family: Calibri;
+    font-size: 18px;
+    font-style: italic;
+}
+
+h3 {
+    color: darkblue;
+    margin-left: 10px;
+}
+
+form {
+    font-family: Calibri;
+    font-size: 18px;
+}
+input[type=text] {
+    font-family: Calibri;
+    color: #ff6200;
+    font-size: 15px;
+    width: 200px;
+}
+input[type=date] {
+     font-family: Calibri;
+     color: #ff6200;
+     font-size: 15px;
+     width: 200px;
+ }
+input[type=checkbox] {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+input[type=radio] {
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.mijn-header {
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+textarea {
+    margin-left: 10px;
+    width: 400px;
+    height: 150px;
+    font-family: Calibri;
+    color: darkgreen;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    margin-left: 10px;
+    font-family: Calibri;
+    background-color: #ff6200;
+    color: white;
+    font-size: 20px;
+}
+
+
+
 /*
     - style the form fields
 
