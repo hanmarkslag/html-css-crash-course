@@ -40,15 +40,17 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
       Extra kind: 25 euro
       Hond: 10 euro
 
-8. - We gaan nu de inhoud van het formulier bouwen. Een formulier is een <form> element met
-     daarbinnen de html elementen om gegevens in te voeren, keuzes te maken met bijvoorbeeld een
-     checkbox of radiobuttons, etc.
-   - Kopieer de volgende html code naar het aanmelden.html bestand, direct na het lijstje dat je
-     net hebt gemaakt:
-           <form onsubmit="confirm('Uw Aanvraag vesrturen?')">
-           </form>
-   - Het form bevat een "onsubmit" attribuut. Dat gebruiken om het formulier straks te versturen. De
-     "onsubmit" verbinden we straks met een button.
+8a. - We gaan nu de inhoud van het formulier bouwen. Een formulier is een <form> element met
+      daarbinnen de html elementen om gegevens in te voeren, keuzes te maken met bijvoorbeeld een
+      checkbox of radiobuttons, etc.
+    - Kopieer de volgende html code naar het aanmelden.html bestand, direct na het lijstje dat je
+      net hebt gemaakt:
+            <form onsubmit="confirm('Uw Aanvraag vesrturen?')">
+            </form>
+    - Het form bevat een "onsubmit" attribuut. Dat gebruiken we om het formulier straks te versturen. De
+      "onsubmit" verbinden we straks met een button.
+
+8b. - Maak binnen het form element een tekstkop met het <h3> element en als tekst "Uw Gegevens"
 
 9. - We starten met een select box waarin de gebruiker de aanhef kan kiezen. Kopieer de volgende code
      in het form element:
@@ -57,7 +59,116 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
              <option value="dhr">Dhr.</option>
              <option value="mevr">Mevr.</option>
          </select>
-   - test git push
+
+   - Je ziet hier drie nieuwe html elementen; <label>, <select> en <option>
+   - Een <label> element wordt meestal gebruikt in combinatie met een "invoer-element" waar de
+     gebruiker gegevens kan invoeren (... das logisch). De label bevat de tekst die uitlegt wat de
+     gebruiker moet invoeren.
+   - Vervolgens gebruiken we het <select> element. Deze laat op het scherm een "drop-down box" zien
+     waarbij de gebruiker uit een aantal mogelijkheden kan kiezen.
+   - De tekst van de mogelijkheden van de drop-down worden in aparte <option> elementen gezet
+     (bijvoorbeeld Dnr. en Mevr. zoals in ons voorbeeld). Een option element heeft tenslotte een
+     value attribuut met een waarde die bij de betreffende option hoort. Deze is onzichtbaar voor de
+     gebruiker maar gebruikt de developer voor moeilijk programmeerwerk (althans, dat vinden
+     sommige van ons :-)
+
+10. - Tijd voor het invoeren van de voor- en achternaam van de aanvrager van het abonnement. Voor
+      het invoeren van tekst op een formulier gebruiken we het <input> element. Kopieer de volgende
+      html code onder het <select> element:
+          <label>Uw voornaam</label>
+          <input type="text">
+    - Bij het <input> element vallen twee zaken op; het element heeft geen end-tag zoals de select
+      (de end-tag is </select>). Bij een <input> element is dit niet nodig. Het tweede dat opvalt
+      is dat het <input> element een "type" attribuut heeft. Deze geeft het soort invoerveld aan;
+      in dit geval tekst.
+
+    - Bij het testen vallen ook weer twee zaken op; het is ten eerste erg lelijk (dat laten we
+      voorlopig zo, in exercise 4 maken we het prachtig) en ten tweede worden het <labeL> en
+      <input> element achter het <select> element op het scherm geplaatst. Het is natuurlijk niet
+      de bedoeling dat alles op 1 regel staat!
+    - Dus.... <br> to the rescue! Plaats het <br> element tussen de <select> en de <label> van het
+      <input> element van deze oefening (inderdaad, het <br> element heeft geen end-tag)
+    - En hoera, het invoeren van de voornaam kan nu op de volgende regel gedaan worden. Het <br>
+      element zorgt voor een regelovergang.
+
+11. Maak met de kennis van oefening 10 een tweede invoerveld aan voor de achternaam
+
+12. - We willen ook graag de geboortedatum van de aanvrager. Ook hiervoor gebruiken we het <input>
+      element. We zouden weer gewoon als input type "text" kunnen gebruiken, maar er bestaat
+      iets mooiers, namelijk "date".
+    - Maak met de kennis van oefening 10 een invoerveld aan voor de geboortedatum en gebruik
+      als type "date"
+    - Als je bij het testen over het inout veld beweegt dan verschijnt een pijltje; klik hierop
+      en een complete date-picker verschijnt. Met zo weining code, zulke mooie dingen...
+
+13. - We maken het eerste deel van het formulier af door invoervelden te maken voor:
+        - Voornaam partner
+        - Achternaam partner
+        - Naam 1e kind
+        - Naam 2e kind
+        - Adres
+        - Postcode
+        - Woonplaats
+    - Alle <input> elementen zijn van het type "text". Vergeet het <br> element niet om elk
+      invoerveld op een nieuwe regel te laten beginnen
+
+14. - We bouwen nu het tweede deel van het formulier
+    - Maak een tekstkop met het <h3> element en als tekst "Aanvullende Gegevens"
+
+15. - We willen graag weten of de familie ook een parkeerplaats voor de auto wil. De aanvragen kan
+      dit aangeven door eeb checkbox aan te vinken (of niet als die geen parkeerplaats wil)
+    - We gebruiken hiervoor weer het <input> element maar nu met als type "checkbox"
+    - Gebruik de onderstaande code:
+          <input type="checkbox">Parkeerplaats (25 euro per jaar)<br>
+    - Dit zet een checkbox neer, de bijbehorende tekst (deze keer geen <label> nodig) en de regelovergang
+
+16. - Maak nog een checkbox aan voor de huur van een bolderkar met als tekst "Bolderkar (50 euro per jaar)"
+
+17. - We willen ook weten hoe de failie is, want de dieren worden onrustig van drukke kinderen
+    - We gaan hiervoor radio buttons gebruiken. Een radio button is ook gewoon weer een <input>
+      element maar dan van type "radio". Voorbeeld met regelovergang:
+          <input type="radio" name="gezin">Rustig<br>
+    - Een <input> element voor een radio button heeft een "name" attribuut. Dis is nodig om radio
+      buttons te groeperen. Dus radio buttons die bij elkaar horen (bij dezelfde vraag in ons geval"
+      hebben dezelfde "name"
+    - Maak een <label> aan met tekst "Type gezin" (sluit af met een <br>)
+    - Maak drie radio buttons aan met teksten: "Rustig", "Druk". "ADHD" en met dezelde "name"
+
+18. - We zijn al weer bij het laatste invoerveld. We willen de aanvrager ook de mogelijkheid geven
+      om wat opmerkingen kwijt te kunnen. Een groot invoer-tekstvlak kan gemaakt worden met het
+      <textarea> element. Gebruik de volgende code:
+          <textarea></textarea>
+
+19. - Het formulier is klaar! Nu nog een knop om het formulier de bevestigen en te versturen. Daarvoor
+      gebruiken we ook weer het <input> element. Memmmmm zal je denken, weer dat <input> element
+      en nu voor een button? Is er geen <button> element. En ja die is er ook maar die zullen we
+      in ons geval niet gebruiken.
+    - Voeg eerst een stel <br> elementen toe om wat ruimte te maken voor de button.
+    - Kopieer de volgende code:
+           <input type="submit" value="Verzend aanvraag">
+    - Een <input> element van het type "submit" is een speciale button. Het is niet alleen een knop
+      waarop je kunt klikken. Een submit <input> element binnen een <form> element triggered een
+      form actie die gedefinieerd is in het form element. Kan je het nog volgen? Als opfrisser, kijk
+      naar de onderstaande code die je in oefening 8a geschreven hebt:
+           <form onsubmit="confirm('Uw Aanvraag vesrturen?')">
+           </form>
+    - Ah.... je ziet het al; in het <form> element is een "onsubmit" actie gedefineerd. Dus als je
+      op de button klikt dat wordt de onsubmit uitgevoerd. En daarin staat:
+           confirm('Uw Aanvraag vesrturen?')
+      ... wat ervoor zorgt dat er een pop-up wordt getoond met de vraag om iets te bevestigen
+    - Jaja, en die confirm dat is geen html of css, dat is JavaScript. Dus je hebt je eerste
+      regel JavaScript code geschreven!
+
+20. Het zit er al weer op. Je hebt een aanvraag formulier gebouwd met veel verschillende
+    invoervelden. Het ziet er alleen wel heel lelijk uit. Dus tijd voor wat stijling. Op
+    naar de laatste exercise!
+
+
+
+
+
+
+
 
 
 
