@@ -57,7 +57,7 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
              <option value="dhr">Dhr.</option>
              <option value="mevr">Mevr.</option>
          </select>
-   -
+   - test git push
 
 
 
