@@ -1,0 +1,158 @@
+Opdracht 2 - css basics
+
+In deze opdracht ga je aan de slag met de basis van css.
+Je gaat de homepage van kinderboerderij Het Gillende Geitje stijlen.
+
+Gebruik deze websites voor meer info over css:
+- algemeen: http://www.w3schools.com/css/ &
+- color picker: http://www.w3schools.com/colors/colors_picker.asp &
+- tabellen stijl: http://www.w3schools.com/css/css_table.asp
+
+1. Je kan op twee manieren stijl aan html elementen toevoegen:
+
+   - door een directe verwijzing naar het element:
+     h1 {
+        color: red;
+     }
+
+   - door een css class te maken en die in het element te gebruiken:
+     .h1-stijling {
+        color:red
+     }
+
+     LET OP: als je een eigen css class wil gebruiken dan moet je een verwijzing in het element maken,
+     dus in ons voorbeeld: <h1 class="h1-stijling">De Kinderboerdeij</h1>
+     Je gebruikt dus het class attribuut in het h1 element.
+
+     LET OP: een eigen class in de css file start met een PUNT "."
+
+2. Open notepad en kopieer onderstaande css code:
+
+.page {
+    background-color: #f2ffe5;
+}
+
+3. Sla het bestand op als mijnstijl.css
+
+4. - We gaan de achtergrond van de webpagina een kleurtje geven
+   - Open een tweede notepad met daarin de html file van exercise 1
+   - Maak een verwijzing in het <body> element naar de css class:
+        <body class="page">
+   - Test of de webpagina nu een achtergrondkleur heeft (Je zal zien dat dit niet zo is)
+   - De "page" class in het css bestand werkt niet omdat de html pagina die hem gebruikt
+     geen verwijzing heeft naar het css bestand
+   - We gaan dit fixen door in het <head> element van het html bestand de volgende regel op te nemen:
+     <link rel="stylesheet" href="mijnstijl.css"> (direct onder het <title> element)
+   - Test de webpagina opnieuw; als het goed is dan heeft de webpagina een achtergronkleurtje gekregen
+
+   - Vind je de kleur niet mooi, dan niet getreurd, je kan een eigen kleur gebruiken
+   - De "magic code" : #f2ffe5 is een kleurnummer, ga naar de colorpicker website (zie referenties bovenin)
+     en "maak" een eigen kleur. Vervang het kleurnummer en test opnieuw
+   - I.p.v. het kleurnummer kan je ook een aantal vastgestelde kleurnamen gebruiken zoals "red", "green", etc.
+   - Vervang het kleurnummer door een kleurnaam en test opnieuw
+   - Kies tenslotten de kleur waar je mee verder wil en zet die als background-color in het css bestand
+
+5. - Vervolgens ga je de pagina header een kleur geven
+   - Maak een nieuwe css class aan:
+       .page-header {
+          color: darkolivegreen;
+       }
+   - Maak in het <h1> element in het html bestand een verwijzing naar deze class:
+       <h1 class="page-header">Welkom bij kinderboerderij Het Gillende Geitje</h1>
+   - De pagina header heeft nu een kleurtje gekregen, vind je hem niet mooi dan weet je nu hoe
+     je deze kan veranderen. Ook hier kan je kleurnamen en kleurnummers gebruiken
+
+6. - Ook de <h2> elementen verdienen een kleurtje
+   - Maak een nieuwe css class aan met naam "article-header" die een kleur geeft aan deze header
+   - Maak een verwijzing in de twee <h2> elementen in het html bestand naar deze class
+
+7. - De tekst in de paragrafen heeft het browser default lettertype en -grootte meegekregen; we
+     willen zelf het lettertype en -grootte bepalen
+   - Maak een nieuwe class aan met naam "text" waarin je het lettertype en -grootte zet:
+        .text {
+            font-family: Calibri;
+            font-size: 20px;
+        }
+   - Maak een verwijzing in de twee <p> elementen naar deze class
+
+8. - Ook de links willen we styling meegeven
+   - Maak een css class met naam "link" en zet hierin het lettertype, lettergrootte en kleur. De link moet
+     ook bold en italic zijn:
+       font-family: "Rockwell";
+       font-size: 20px;
+       font-weight: bold;
+       font-style: italic;
+       color: darkred;
+   - Heeee...... zal je denken?! Bold en italic, dat deden we toch met de <b> en <i> html elementen. Inderdaad
+     die hadden we al eerder gebruikt! Zowel html als css bieden op een verschillende manier de mogelijkheid
+     om tekst bold en italic te maken. Een "good practice" is om content (html) en opmaak (css) gescheiden te
+     houden. En dus om bold en italic in een css class te regelen en niet m.b.v. html elementen.
+
+9. - Het is ook mogelijk om een paragraaf of een header een border en achtergrond kleur te geven
+   - Maak hiertoe een nieuwe css class met naam "text-area" aan met de volgende stijlen:
+       border: 1px solid lightcoral;
+       background-color: lightgray;
+   - Maak een verwijzing in het eerste <p> element naar deze class:
+       <p class="text text-area">
+   - Je ziet dat je in de class-verwijzing meerdere css classes kan opnemen (gescheiden door een spatie)
+   - De border is 1 pixel breed, is een gesloten lijn en heeft een kleur
+
+10. - We willen nu als je met de muis over een link beweegt, dat de achtergrond een andere kleur krijgt
+    - We gebruiken hiervoor "a:hover"
+    - Zoals eerder gezegd kan je ook een css class maken door direct naar een html element te verwijzen,
+      in dit geval naar het <a> element en nog specifieker als de gebruiker er met zijn muis overheen beweegt (hover)
+    - Maak de volgende css class:
+      a:hover {
+          background-color: #ff6200;
+      }
+    - Als reminder; we refereren direct aan een html element dus GEEN punt "." voor de class-naam
+    - Omdat je direct naar een html element verwijst hoef je in het html bestand geen verwijzing
+      bij het element <a> meer op te nemen; het werkt meteen en voor alle links op de webpagina!
+
+11. - De nummering van lijstjes kan je naar eigen inzicht veranderen. We maken er Romeinse cijfers van.
+    - Maak een css class aan met naam "list":
+        .list {
+            list-style-type: upper-roman;
+        }
+    - Met het list-style-type bepaal je het type van de nummering
+    - Maak een verwijzing in het <ol> element naar deze class (alle <li> elementen nemen de stijl automatisch over)
+
+12. - De tabel ziet er nog lelijk uit; geen lijntjes, scheve headers en geen kleurtjes. We gaan de tabel stijlen
+      door net zoals bij de a:hover, direct naar de html elementen te verwijzen. Maak de volgende css classes aan:
+          table, th, td {
+              border: 1px solid black;
+          }
+          table {
+              border-collapse: collapse;
+          }
+          th {
+              text-align: left;
+              background-color: lightcoral;
+          }
+          tr:nth-child(odd) {
+              background: lightgray
+          }
+
+    - Je ziet dat de tabel en alle tabel cellen een zwart lijntje krijgen
+    - De tabel headers (de derde css class: th {...}) worden links uitgelijnd en de achtergrond van de
+      headers krijgen een kleurtje (de default uitlijning van de heders in een table is gecentreerd)
+    - In de tweede css class (table {...}) worden de borders van alle tabel cellen in elkaar "gevouwen",
+      dit is goed te zien als je deze class even weghaalt en opnieuw test. Je ziet dan dubbele borders.
+    - Tenslotten is er de magie in de laatste (vierde) class; tr:nth-child(odd) {...}. Hiermee zeggen we
+      dat elke oneven rij in de tabel een lichtgrijze achtergrond kleur krijgt. Je raad het al, als je
+      de even rijen een kleur wil geven dan gebruik je niet "odd", maar "even"
+
+13. En ook deze exercise zit erop. Door veel met css te spelen heb je nu enig begrip van hoe je
+    classen aanmaakt (twee manieren) en wat er zoal te stijlen is. Gelukkig is bovenstaand slechts een
+    fractie van wat er mogelijk is dus er is nog veel meer leuks te ontdekken. Dus op naar de volgende
+    exercise.
+
+
+
+
+
+
+
+
+
+

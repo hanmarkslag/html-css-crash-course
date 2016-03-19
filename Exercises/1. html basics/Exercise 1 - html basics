@@ -2,9 +2,10 @@ Opdracht 1 - html basics
 
 In deze opdracht ga je aan de slag met de basis elementen van html.
 Je bouwt een webpagina voor kinderboerderij Het Gillende Geitje.
+
 Gebruik deze website voor meer info over html elementen: http://www.w3schools.com/html/
 
-1. Maak op je bureaublad een nieuwe map aan met naam html-basics
+1. Maak op je bureaublad een nieuwe map aan met naam html-css-goeroe
 
 2. Open notepad en kopieer onderstaande html code (deze staat ook in het example.html bestand):
 
@@ -25,12 +26,12 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
 4. - Vervang de tekst in het <title> element door "Het Gillende Geitje" en type in het <body> element "Hallo Dieren"
    - Hoera ! Jouw eerste website is live! De title zie je terug in het tabje in de browser.
 
-5. - Verwijder in het <body> element "Hallo Dieren"; alle html code die nu volgt komt in het <body> element te staan.
+5. - Verwijder in het <body> element "Hallo Dieren"; alle html code die er nu volgt, komt in het <body> element te staan.
    - We gaan een top-foto toevoegen door het <img> element te gebruiken.
    - Kopieer het bestand geit.jpg naar jouw map waar je net de index.html in hebt aangemaakt.
    - Zet de volgende html code in het <body> element: <img src="geit.jpg" width="100%">.
-   - Zoals je ziet is dit het <img> element met daarin twee attributen, een voor de naam van het plaatje
-     en een voor de breedte. 100% betekent dat de gehele breedte van de browser gebruikt wordt.
+   - Zoals je ziet is dit het <img> element met daarin twee attributen, een voor de naam van het plaatje (src)
+     en een voor de breedte (width). 100% betekent dat de gehele breedte van de browser gebruikt wordt.
 
 6. - Voeg een header in de pagina toe door het <h1> element te gebruiken
    - Zet de volgende html code na het <img> element: <h1>Welkom bij kinderboerderij Het Gillende Geitje</h1>
@@ -47,7 +48,7 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
       2 lama's en een zebra."
    - Het <p> element is het paragraaf element dat meestal gebruikt wordt om stukken tekst te tonen.
 
-8. - Je gaat nu een link maken naar een andere webpagina; dit is de basis van HTML (de HT in HTML; Hypertext)
+8. - Je gaat nu een link maken naar een andere webpagina; dit is de basis van HTML (de HT in HTML; HyperText)
    - Je maakt een link door gebruik te maken van het <a> element
    - Voeg de volgende html code toe onder het <p> element:
      <a href="http://www.kinderboerderijgeldrop.nl/uploads/images/plaatjes/geiten_collage_langwerpig.jpg">Klik hier voor onze dieren.</a>
@@ -58,13 +59,13 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
 9. - Maak opnieuw een paragraaf aan (<p> element) met de volgende tekst:
      "Uniek voor onze kinderboerderij is de <b>welkomst-geit</b> die de gasten welkom heet."
    - Wat valt je op aan de tekst... inderdaad er wordt gebruik gemaakt van het <b> element;
-     alle tekst binnen het <b> element wordt bold en zoals je ziet kan het <b> element binnen een
-     ander element gebruikt worden. In sit geval binnen het <p> element
+     alle tekst binnen het <b> element wordt bold. Zoals je ziet kan het <b> element binnen een
+     ander element gebruikt worden. In dit geval binnen het <p> element
 
 10. - Plaatjes maken een website leuker en geanimeerde plaatsjes nog leuker
-    - Kopieer het bestand welkom-geit.gif naar jouw map waar je net de index.html in hebt aangemaakt.
+    - Kopieer het bestand welkom-geit.gif naar jouw map waarin je de index.html hebt aangemaakt.
     - Maak een plaatje op de website door gebruik te maken van het <img> element,
-      zonder het width attribuut te gebruiken
+      zonder het width attribuut te gebruiken (!)
     - De welkomst-geit is actief!
 
 11. - Maak een nieuwe header aan met het <h2> element en als tekst: "Het ontstaan van onze kinderboerderij"
@@ -84,10 +85,10 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
     - Test de link!
 
 12. - Maak een nieuwe header met het <h3> element en tekst "Openingstijden"
-    - Maak een lijstje met bullets door gebruik te maken van het <ul> element. Het <ul> element plaats
-      je <li> elementen die de tekst van het lijstje bevatten; voor elke bullet 1 <li> element. Dus:
+    - Maak een lijstje met bullets door gebruik te maken van het <ul> element. In het <ul> element plaats
+      je <li> elementen die de tekst van het lijst-item bevat; voor elke bullet gebruik je een <li> element. Dus:
       <ul>
-         <li>Mijn eerste regel</li>
+         <li>Mijn eerste lijst-item</li>
          ....
       </ul>
     - Maak een lijstje met vier openingstijden;
@@ -98,7 +99,7 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
 
 13. - HTML heeft ook genummerde lijstjes, gebruik hiervoor het <ol> element i.p.v. het <ul> element
     - Maak eerst een nieuwe header met het <h3> element en tekst "Huisregels"
-    - En vervolgens het lijstje met het <ol> element en daarbinnen de <li> elementen met hierin de volgende tekst:
+    - En maak vervolgens het lijstje met het <ol> element en daarbinnen de <li> elementen met hierin de volgende lijst-items:
         "Geen dieren mee naar huis nemen"
         "Geen eigen huisdieren en/of kinderen achterlaten"
         "De dieren en het personeel niet voederen"
@@ -123,9 +124,9 @@ LET OP : na elke onderstaande stap de index.html opslaan en om te testen dubbel 
             ....
         </table>
     - Let op dat alleen het eerste <tr> element de table headers bevat <th>
-    - Maak nu een tabel met drie kolommen en vijf rijen met kolom headers "Dier", "Aantal", "Aibaar"
+    - Maak nu een tabel met drie kolommen en vijf rijen met kolom headers "Dier", "Aantal", "Aaibaar"
       Leef je uit met de invulling van de table data
 
 15. DONE !! De website van de kinderboerderij is klaar. Maar.... de kinderen vinden hem nogal saai,
     geen kleurtjes, lijntjes, etc. Tijd voor wat styling, op naar exercise twee om naast HTML
-    expert nu ook een CSS crack te worden!
+    expert nu ook een CSS goeroe te worden!

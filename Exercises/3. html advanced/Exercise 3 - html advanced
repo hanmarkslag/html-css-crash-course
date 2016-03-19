@@ -1,0 +1,64 @@
+Opdracht 3 - html advanced
+
+In deze opdracht ga je verder met html elementen. De focus ligt in deze
+opdracht op de interactie met de gebruiker. Hiertoe bouw je een webpagina
+waarmee een gebruiker een abonnement kan afsluiten.
+
+Gebruik deze websites voor meer info over html:
+    html algemeen: http://www.w3schools.com/html/
+    html formulieren: http://www.w3schools.com/html/html_forms.asp
+    html formulier elementen: http://www.w3schools.com/html/html_form_elements.asp
+    html input element: http://www.w3schools.com/tags/tag_input.asp
+
+2. Open notepad en kopieer onderstaande html code:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gezinslidmaatschap</title>
+</head>
+<body>
+
+</body>
+</html>
+
+3. Sla het bestand op als aanmelden.html in de map met index.html en mijnstijl.css
+
+Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html pagina
+
+4. Voeg dezelfde foto uit opdracht 1 als header in dit html bestand toe
+
+5. Maak een pagina kop "Aanvragen Gezinslidmaatschap" met het <h1> element
+
+6. Maak een paragraaf aan met het <p> element en tekst:
+   "Vul de onderstaande gegevens in om een lidmaatschap voor u en uw gezin aan te vragen. Het
+    gezinslidmaatschap kan aangevraagd worden voor u en uw partner en maximaal 2 kinderen. Een
+    lidmaatschap loopt van 1 januari t/m 31 december. Onderstaand vindt u de tarieven:"
+
+7. Maak een lijstje met het <ul> element en 3 <li> elementen met de volgende teksten:
+      Gezin (max. 2 kinderen): 145 euro per jaar
+      Extra kind: 25 euro
+      Hond: 10 euro
+
+8. - We gaan nu de inhoud van het formulier bouwen. Een formulier is een <form> element met
+     daarbinnen de html elementen om gegevens in te voeren, keuzes te maken met bijvoorbeeld een
+     checkbox of radiobuttons, etc.
+   - Kopieer de volgende html code naar het aanmelden.html bestand, direct na het lijstje dat je
+     net hebt gemaakt:
+           <form onsubmit="confirm('Uw Aanvraag vesrturen?')">
+           </form>
+   - Het form bevat een "onsubmit" attribuut. Dat gebruiken om het formulier straks te versturen. De
+     "onsubmit" verbinden we straks met een button.
+
+9. - We starten met een select box waarin de gebruiker de aanhef kan kiezen. Kopieer de volgende code
+     in het form element:
+         <label>Aanhef</label>
+         <select>
+             <option value="dhr">Dhr.</option>
+             <option value="mevr">Mevr.</option>
+         </select>
+   -
+
+
+
+
