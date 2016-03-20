@@ -2,7 +2,7 @@ Opdracht 3 - html advanced
 
 In deze opdracht ga je verder met html elementen. De focus ligt in deze
 opdracht op de interactie met de gebruiker. Hiertoe bouw je een webpagina
-waarmee een gebruiker een abonnement kan afsluiten.
+waarmee de gebruiker een abonnement kan afsluiten.
 
 Gebruik deze websites voor meer info over html:
     html algemeen: http://www.w3schools.com/html/
@@ -30,7 +30,7 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
 
 5. Maak een pagina kop "Aanvragen Gezinslidmaatschap" met het <h1> element
 
-6. Maak een paragraaf aan met het <p> element en tekst:
+6. Maak een paragraaf met het <p> element en tekst:
    "Vul de onderstaande gegevens in om een lidmaatschap voor u en uw gezin aan te vragen. Het
     gezinslidmaatschap kan aangevraagd worden voor u en uw partner en maximaal 2 kinderen. Een
     lidmaatschap loopt van 1 januari t/m 31 december. Onderstaand vindt u de tarieven:"
@@ -97,8 +97,8 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
       element. We zouden weer gewoon als input type "text" kunnen gebruiken, maar er bestaat
       iets mooiers, namelijk "date".
     - Maak met de kennis van oefening 10 een invoerveld aan voor de geboortedatum en gebruik
-      als type "date"
-    - Als je bij het testen over het inout veld beweegt dan verschijnt een pijltje; klik hierop
+      als input type "date"
+    - Als je bij het testen over het input veld beweegt dan verschijnt een pijltje; klik hierop
       en een complete date-picker verschijnt. Met zo weining code, zulke mooie dingen...
 
 13. - We maken het eerste deel van het formulier af door invoervelden te maken voor:
@@ -115,8 +115,8 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
 14. - We bouwen nu het tweede deel van het formulier
     - Maak een tekstkop met het <h3> element en als tekst "Aanvullende Gegevens"
 
-15. - We willen graag weten of de familie ook een parkeerplaats voor de auto wil. De aanvragen kan
-      dit aangeven door eeb checkbox aan te vinken (of niet als die geen parkeerplaats wil)
+15. - We willen graag weten of de familie ook een parkeerplaats voor de auto wil. De aanvrager kan
+      dit aangeven door een checkbox aan te vinken (of niet als hij/zij geen parkeerplaats wil)
     - We gebruiken hiervoor weer het <input> element maar nu met als type "checkbox"
     - Gebruik de onderstaande code:
           <input type="checkbox">Parkeerplaats (25 euro per jaar)<br>
@@ -124,13 +124,12 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
 
 16. - Maak nog een checkbox aan voor de huur van een bolderkar met als tekst "Bolderkar (50 euro per jaar)"
 
-17. - We willen ook weten hoe de failie is, want de dieren worden onrustig van drukke kinderen
+17. - We willen ook weten hoe de familie is, want de dieren worden onrustig van drukke kinderen
     - We gaan hiervoor radio buttons gebruiken. Een radio button is ook gewoon weer een <input>
       element maar dan van type "radio". Voorbeeld met regelovergang:
           <input type="radio" name="gezin">Rustig<br>
     - Een <input> element voor een radio button heeft een "name" attribuut. Dis is nodig om radio
-      buttons te groeperen. Dus radio buttons die bij elkaar horen (bij dezelfde vraag in ons geval"
-      hebben dezelfde "name"
+      buttons te groeperen. Dus radio buttons die bij elkaar horen hebben dezelfde "name"
     - Maak een <label> aan met tekst "Type gezin" (sluit af met een <br>)
     - Maak drie radio buttons aan met teksten: "Rustig", "Druk". "ADHD" en met dezelde "name"
 
@@ -141,9 +140,9 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
 
 19. - Het formulier is klaar! Nu nog een knop om het formulier de bevestigen en te versturen. Daarvoor
       gebruiken we ook weer het <input> element. Memmmmm zal je denken, weer dat <input> element
-      en nu voor een button? Is er geen <button> element. En ja die is er ook maar die zullen we
+      en nu voor een button? Is er geen <button> element. En ja die is er ook in html, maar die zullen we
       in ons geval niet gebruiken.
-    - Voeg eerst een stel <br> elementen toe om wat ruimte te maken voor de button.
+    - Voeg eerst een drietal <br> elementen toe om wat ruimte te maken voor de button.
     - Kopieer de volgende code:
            <input type="submit" value="Verzend aanvraag">
     - Een <input> element van het type "submit" is een speciale button. Het is niet alleen een knop
@@ -160,7 +159,7 @@ Alle onderstaande code voeg je toe in het <body> element van de aanmelden.html p
       regel JavaScript code geschreven!
 
 20. Het zit er al weer op. Je hebt een aanvraag formulier gebouwd met veel verschillende
-    invoervelden. Het ziet er alleen wel heel lelijk uit. Dus tijd voor wat stijling. Op
+    invoervelden. Het ziet er alleen wel heel lelijk uit. Dus tijd voor wat opmaak. Op
     naar de laatste exercise!
 
 
