@@ -1,7 +1,7 @@
 Opdracht 4 - css advanced
 
 In deze opdracht ga je aan de slag met nog meer css.
-Je gaat het aanvraagformulier van kinderboerderij Het Gillende Geitje stijlen.
+Je gaat het aanvraagformulier van kinderboerderij Het Gillende Geitje opmaken.
 
 Gebruik deze websites voor meer info over css:
 - algemeen: http://www.w3schools.com/css/ &
@@ -9,24 +9,24 @@ Gebruik deze websites voor meer info over css:
 
 1. We zullen in deze oefening veel gebruik maken van de directe verwijzingen naar
    html elementen zodat deze meteen actief worden in de html zonder dat we de
-   html hoeven aan te passen. Waar nodig maken een eigen class.
+   html hoeven aan te passen. Waar nodig maak je een eigen class.
 
 2. - Eerst enkele voorbereidingen.
-   - Maak een nieuw css bestand in notepad aan met naam "aanmelden.css" en sla deze op.
-   - Maak een verwijzing in het html bestand (aanmelden.html) naar dit css bestand (zie exercise 2)
+   - Maak een nieuw css bestand in notepad aan met naam "aanmelden.css" en sla deze leeg op.
+   - Maak een verwijzing in de header van het html bestand (aanmelden.html) naar dit css bestand (zie exercise 2)
 
 3. - We starten met een stijlvolle en rustige achtergrond. De gebruikelijk plek voor
-     een achtergrond kleur van de hele pagina is het <body> element. Maak een class
+     een achtergrondkleur van de hele pagina is het <body> element. Maak een class
      aan die dit doet:
          body {
              background-color: #f0f0f5
          }
-   - Als opfrisser; er wordt direct naar een <html> element verwezen, dus geen punt "." voor de
+   - Als opfrisser; er wordt direct naar een <html> element verwezen (<body>), dus geen punt "." voor de
      class naam (class naam is in dit geval "body")
 
 4. - Je gaat nu met margins werken. Margin is de ruimte om het html element heen. Deze ruimte kan je
      manipuleren zodat het element naar links, rechts, boven of beneden schuift.
-   - Om dit te laten zien gaan we de <h1> header van de pagina boven op de foto plaatsen. Maak
+   - Om dit te laten zien gaan we de <h1> header van de pagina bovenop de foto plaatsen. Maak
      om te beginnen een nieuwe css class aan:
          h1 {
              color: white;
@@ -57,12 +57,12 @@ Gebruik deze websites voor meer info over css:
    - Maak een verwijzing in het <p> element in aanmelden.html naar deze class (class="text").
    - Maak deze css class nu zo dat het lettertype "Calibri" en lettergrootte "20px" is.
    - We willen dat de tekst maar 60% van de breedte van de pagiina in beslag neemt; hiervoor gebruik
-     je de volgende css code: width: 60%
+     je de volgende css code: width: 60%;
    - Tenslotte willen we dat de text een klein beetje links inspringt. Laat de tekst 10 pixels inspringen
      door gebruik te maken van margin-left.
 
-6. - Maak een class voor de het lijstje (class voor het <ul> element) om de tekst van de drie punten
-     te stijlen. De tekst moet lettertype "Calibri" en lettergrootte "18px" krijgen. Daarnaast
+6. - Maak een class voor de het lijstje (het <ul> element) om de tekst van de drie punten
+     te stijlen. De tekst moet lettertype "Calibri" en lettergrootte "18px" krijgen. Ook
      moet de tekst italic zijn.
 
 7. - De twee <h3> headers moeten een kleurtje krijgen en 10 pixels links inspringen. Maar hiervoor
@@ -73,8 +73,8 @@ Gebruik deze websites voor meer info over css:
    - Je ziet hier de kracht van css; door slechts 1 class kunnen alle labels in 1 keer hun
      opmaak krijgen
 
-9. - Over het algemeen krijgt alles binnen een element de opmaak die je aan dit element meegeeft. In
-     ons voorbeeld kan je dit zien door een class voor het <form> element te maken en hierin het
+9. - Over het algemeen krijgt alles (alle elementen) binnen een element de opmaak die je aan dit element
+     meegeeft. In ons voorbeeld kan je dit zien door een class voor het <form> element te maken en hierin het
      lettertype "Calibri" en lettergroote "18px" te zetten.
    - Maak deze class en test de pagina. Je ziet dat alle elementen in het form hetzelfde lettertype
      en grootte gekregen hebben
@@ -85,20 +85,20 @@ Gebruik deze websites voor meer info over css:
       <input> elementen van het type "text". Maak de volgende css class aan:
           input[type=text] {
           }
-    - In principe is dit een standaard css class die naar <input> elementen verwijst. door
+    - In principe is dit een standaard css class die naar <input> elementen verwijst. Maar door
       [type=text] toe te voegen verwijs je nog specifieker, namelijk naar alleen de <input>
       elementen van het type text
     - Voeg stijl in deze css class toe waardoor het lettertype Calibri, lettergrootte 15px,
-      kleur #ff6200 en breedte van het veld 200px zijn.
+      kleur #ff6200 en breedte van het veld 200px is.
 
 11. - Voor het gemak willen het het datum veld dezelfde stijl als de text invoervelden
       meegeven.
-    - Maar daarvoor een nieuwe class zoals in oefening 10 maar nu van het type "date".
+    - Maak daarvoor een nieuwe class zoals in oefening 10 maar nu van het type "date".
     - Geef deze class dezelfde stijlen mee als in oefening 10.
 
-12. - Nu de checkboxen; maak een class aan vergelijkbaar als in oefening 10 en 11. We hoeven
+12. - Nu de checkboxen; maak een css class vergelijkbaar met die in oefening 10 en 11. We hoeven
       verder geen letter-stijlen mee te geven want die checkbox heeft geen text. We willen
-      de positie van de checkboxen wel verbeteren. We willen wat kantlijn ruimte links van
+      de positie van de checkboxen wel verbeteren. We willen wat linker kantlijn ruimte voor
       de checkbox (10px) en wat ruimte tussen de checkbox en de tekst daarachter (8px).
       Gebruik de margin mogelijkheden om dit voor elkaar te krijgen
 
@@ -124,6 +124,9 @@ Gebruik deze websites voor meer info over css:
       margin links zodat de knop netjes uitlijnt met de rest van het scherm (10px).
 
 17. DONE!!!!!!!!!! Je bent nu helemaal klaar met de crash course. Gefeliciteerd!!
+
+18. - Heb je nog tijd over dan mag je op de index.html een link maken naar de aanmeld pagina.
+    - Nog meer tijd over; maak dan bovenin het aanmeldscherm een link terug naar index.html
 
 
 
